@@ -1,0 +1,143 @@
+.profile-container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+}
+
+.profile-container header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-container header span {
+    font-size: 20px;
+    margin-left: 24px;
+}
+
+
+.profile-container header a {
+    width: 260px;
+    margin-left: auto;
+    margin-top: 0;
+    text-align: center;
+}
+
+.profile-container header button {
+    height: 45px;
+    width: 60px;
+    border-radius: 4px;
+    border: 1px solid #dcdce6;
+    background: transparent;
+    margin-left: 16px;
+    transition: border-color 0.2s;
+}
+
+.profile-container header button:hover {
+    border-color: #999;
+}
+
+.profile-container h1 {
+    margin-top: 80px;
+    margin-bottom: 24px;
+}
+
+.profile-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    list-style: none;
+}
+
+.profile-container ul li {
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.profile-container ul li section svg {
+    margin-left: 10px;
+    transition: ease .2s;
+}
+
+.profile-container ul li section:hover svg {
+    margin-left: 20px;
+}
+
+.profile-container ul li div {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+.profile-container ul li div button {
+    border: 0;
+    background: #fff;
+}
+
+.profile-container ul li div button+button {
+    margin-left: 15px;
+}
+
+.profile-container ul li div button:hover {
+    opacity: 0.8;
+}
+
+.profile-container ul li strong {
+    display: block;
+    margin-bottom: 16px;
+    color: #41414d;
+}
+
+.profile-container ul li p+strong {
+    margin-top: 32px;
+}
+
+.profile-container ul li p {
+    color: #737380;
+    line-height: 21px;
+    font-size: 16px;
+}
+
+/* medias  */
+
+@media (max-width: 425px) {
+    .profile-container header {
+        flex-direction: column;
+    }
+
+    .profile-container header span {
+        margin-bottom: 15px;
+    }
+
+    .profile-container header a {
+        width: 225px;
+        margin-left: 0;
+    }
+
+    .profile-container h1 {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .profile-container ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .profile-container header a {
+        width: 190px;
+        margin-left: 0;
+        font-size: 15px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .profile-container header button {
+        width: 50px;
+    }
+}
